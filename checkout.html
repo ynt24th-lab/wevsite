@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>BookStore - Thanh toán</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="BookStore - Thư viện sách trực tuyến" name="keywords">
+    <meta content="Mua sách online, nhà sách trực tuyến" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .checkout-summary p {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .checkout-summary .sub-total, .checkout-summary .ship-cost {
+            font-weight: bold;
+        }
+
+        .checkout-summary h2 {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px solid #ff6f61;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top bar Start -->
+    <div class="top-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <i class="fa fa-envelope"></i>
+                    book@bookstore.com
+                </div>
+                <div class="col-sm-6">
+                    <i class="fa fa-phone-alt"></i>
+                    +012-345-6789
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top bar End -->
+    <!-- Nav Bar Start -->
+    <div class="nav">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a href="#" class="navbar-brand">MENU</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto">
+                        <a href="index.html" class="nav-item nav-link">Trang chủ</a>
+                        <a href="product-list.html" class="nav-item nav-link">Sản phẩm</a>
+                        <a href="cart.html" class="nav-item nav-link">Giỏ hàng</a>
+                        <a href="checkout.html" class="nav-item nav-link active">Thanh toán</a>
+                        <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tài khoản</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Đăng nhập</a>
+                                <a href="#" class="dropdown-item">Đăng ký</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+    <!-- Bottom Bar Start -->
+    <div class="bottom-bar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="search">
+                        <input type="text" placeholder="Tìm kiếm sách">
+                        <button><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="user">
+                        <a href="wishlist.html" class="btn wishlist">
+                            <i class="fa fa-heart"></i>
+                            <span>(0)</span>
+                        </a>
+                        <a href="cart.html" class="btn cart">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span>(0)</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bottom Bar End -->
+    <!-- Breadcrumb Start -->
+    <div class="breadcrumb-wrap">
+        <div class="container-fluid">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                <li class="breadcrumb-item active">Thanh toán</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+    <!-- Checkout Start -->
+    <div class="checkout">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="checkout-inner">
+                        <div class="billing-address">
+                            <h2>Thông tin nhận hàng</h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Họ</label>
+                                    <input class="form-control" type="text" id="firstName" placeholder="Nhập họ">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Tên</label>
+                                    <input class="form-control" type="text" id="lastName" placeholder="Nhập tên">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Email</label>
+                                    <input class="form-control" type="email" id="email" placeholder="Email">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Số điện thoại</label>
+                                    <input class="form-control" type="tel" id="mobile" placeholder="Số điện thoại">
+                                </div>
+                                <div class="col-md-12">
+                                    <label>Địa chỉ</label>
+                                    <input class="form-control" type="text" id="address" placeholder="Địa chỉ giao hàng">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Quốc gia</label>
+                                    <select class="custom-select" id="country">
+                                        <option selected>Việt Nam</option>
+                                        <option>USA</option>
+                                        <option>UK</option>
+                                        <option>Japan</option>
+                                        <option>Korea</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Thành phố</label>
+                                    <input class="form-control" type="text" id="city" placeholder="Thành phố">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Quận/Huyện</label>
+                                    <input class="form-control" type="text" id="state" placeholder="Quận/Huyện">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Mã bưu điện</label>
+                                    <input class="form-control" type="text" id="zip" placeholder="Mã bưu điện">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="checkout-inner">
+                        <div class="checkout-summary" id="cartSummary">
+                            <h1>Giỏ hàng</h1>
+                            <p>Đang tải...</p>
+                        </div>
+
+                        <div class="checkout-payment">
+                            <div class="payment-methods">
+                                <h1>Phương thức thanh toán</h1>
+                                <div class="payment-method">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="payment-1" name="payment" checked>
+                                        <label class="custom-control-label" for="payment-1">Thanh toán khi nhận hàng (COD)</label>
+                                    </div>
+                                </div>
+                                <div class="payment-method">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="payment-2" name="payment">
+                                        <label class="custom-control-label" for="payment-2">Chuyển khoản ngân hàng</label>
+                                    </div>
+                                </div>
+                                <div class="payment-method">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="payment-3" name="payment">
+                                        <label class="custom-control-label" for="payment-3">Ví Momo</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout-btn">
+                                <button id="placeOrderBtn">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Checkout End -->
+    <!-- Footer Start -->
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Liên hệ</h2>
+                        <div class="contact-info">
+                            <p><i class="fa fa-map-marker"></i>123 Đường Sách, TP.HCM</p>
+                            <p><i class="fa fa-envelope"></i>book@bookstore.com</p>
+                            <p><i class="fa fa-phone"></i>+123-456-7890</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Theo dõi</h2>
+                        <div class="contact-info">
+                            <div class="social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Thông tin</h2>
+                        <ul>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                            <li><a href="#">Điều khoản</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Hỗ trợ</h2>
+                        <ul>
+                            <li><a href="#">Chính sách thanh toán</a></li>
+                            <li><a href="#">Chính sách vận chuyển</a></li>
+                            <li><a href="#">Chính sách đổi trả</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row payment align-items-center">
+                <div class="col-md-6">
+                    <div class="payment-method">
+                        <h2>Chấp nhận thanh toán:</h2>
+                        <img src="img/payment-method.png" alt="Payment Method" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="payment-security">
+                        <h2>Bảo mật bởi:</h2>
+                        <img src="img/godaddy.svg" alt="Payment Security" />
+                        <img src="img/norton.svg" alt="Payment Security" />
+                        <img src="img/ssl.svg" alt="Payment Security" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Footer Bottom Start -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    <p>Copyright &copy; BookStore. All Rights Reserved</p>
+                </div>
+                <div class="col-md-6 template-by">
+                    <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Bottom End -->
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $(function() {
+        // Lấy dữ liệu giỏ hàng
+        function loadCartSummary() {
+        var cart = JSON.parse(localStorage.getItem('cart') || '[]');
+        var purchases = JSON.parse(localStorage.getItem('purchases') || '[]');
+        var sales = JSON.parse(localStorage.getItem('sales') || '[]');
+
+        // Kiểm tra nếu giỏ hàng trống
+        if (cart.length === 0 && purchases.length === 0 && sales.length === 0) {
+        alert('Giỏ hàng trống! Vui lòng thêm sản phẩm.');
+        window.location.href = 'cart.html';
+        return;
+        }
+
+        var totalAll = 0;
+        var productListHTML = '';
+
+        for (var i = 0; i < cart.length; i++) {
+        var total = cart[i].quantity * cart[i].price;
+        totalAll += total;
+        productListHTML += '<p>' + cart[i].name + ' (x' + cart[i].quantity + ')<span>' + total.toLocaleString('vi-VN') + ' đ</span></p>';
+        }
+        for (var i = 0; i < purchases.length; i++) {
+        var total = purchases[i].quantity * purchases[i].unitPrice;
+        totalAll += total;
+        productListHTML += '<p>' + purchases[i].productName + ' (x' + purchases[i].quantity + ')<span>' + total.toLocaleString('vi-VN') + ' đ</span></p>';
+        }
+        for (var i = 0; i < sales.length; i++) {
+        var total = sales[i].quantity * sales[i].unitPrice;
+        totalAll += total;
+        productListHTML += '<p>' + sales[i].productName + ' (x' + sales[i].quantity + ')<span>' + total.toLocaleString('vi-VN') + ' đ</span></p>';
+        }
+
+        $('#cartSummary').html(`
+        <h1>Giỏ hàng của bạn</h1>
+        ${productListHTML}
+        <p class="sub-total">Tạm tính<span>${totalAll.toLocaleString('vi-VN')} đ</span></p>
+        <p class="ship-cost">Phí vận chuyển<span>Miễn phí</span></p>
+        <h2>Tổng cộng<span>${totalAll.toLocaleString('vi-VN')} đ</span></h2>
+        `);
+
+        // Cập nhật số lượng icon giỏ hàng
+        var itemCount = 0;
+        for (var i = 0; i < cart.length; i++) itemCount += cart[i].quantity;
+        for (var i = 0; i < purchases.length; i++) itemCount += purchases[i].quantity;
+        for (var i = 0; i < sales.length; i++) itemCount += sales[i].quantity;
+        $('.cart span').text('(' + itemCount + ')');
+
+        return totalAll;
+        }
+
+        loadCartSummary();
+
+        // Đặt hàng
+        $('#placeOrderBtn').click(function(e) {
+        e.preventDefault();
+
+        var firstName = $('#firstName').val();
+        var lastName = $('#lastName').val();
+        var email = $('#email').val();
+        var mobile = $('#mobile').val();
+        var address = $('#address').val();
+        var city = $('#city').val();
+
+        if (!firstName || !lastName) {
+        alert('Vui lòng nhập Họ và Tên!');
+        return;
+        }
+        if (!mobile) {
+        alert('Vui lòng nhập Số điện thoại!');
+        return;
+        }
+        if (!address) {
+        alert('Vui lòng nhập Địa chỉ!');
+        return;
+        }
+
+        var fullName = firstName + ' ' + lastName;
+        var phone = mobile;
+        var fullAddress = address + (city ? ', ' + city : '');
+
+        var cart = JSON.parse(localStorage.getItem('cart') || '[]');
+        var purchases = JSON.parse(localStorage.getItem('purchases') || '[]');
+        var sales = JSON.parse(localStorage.getItem('sales') || '[]');
+
+        var total = 0;
+        for (var i = 0; i < cart.length; i++) total += cart[i].quantity * cart[i].price;
+        for (var i = 0; i < purchases.length; i++) total += purchases[i].quantity * purchases[i].unitPrice;
+        for (var i = 0; i < sales.length; i++) total += sales[i].quantity * sales[i].unitPrice;
+
+        var orderHistory = JSON.parse(localStorage.getItem('orderHistory') || '[]');
+        var now = new Date();
+        var orderId = 'ORD' + now.getTime();
+        var dateStr = now.getDate() + '/' + (now.getMonth() + 1) + '/' + now.getFullYear() + ' ' + now.getHours() + ':' + now.getMinutes();
+
+        for (var i = 0; i < cart.length; i++) {
+        orderHistory.push({
+        orderId: orderId, customerName: fullName, customerPhone: phone,
+        customerAddress: fullAddress, customerEmail: email,
+        productName: cart[i].name, quantity: cart[i].quantity,
+        price: cart[i].price, total: cart[i].quantity * cart[i].price,
+        date: dateStr, type: 'Sản phẩm'
+        });
+        }
+        for (var i = 0; i < purchases.length; i++) {
+        orderHistory.push({
+        orderId: orderId, customerName: fullName, customerPhone: phone,
+        customerAddress: fullAddress, customerEmail: email,
+        productName: purchases[i].productName, quantity: purchases[i].quantity,
+        price: purchases[i].unitPrice, total: purchases[i].quantity * purchases[i].unitPrice,
+        date: dateStr, type: 'Mua hàng'
+        });
+        }
+        for (var i = 0; i < sales.length; i++) {
+        orderHistory.push({
+        orderId: orderId, customerName: fullName, customerPhone: phone,
+        customerAddress: fullAddress, customerEmail: email,
+        productName: sales[i].productName, quantity: sales[i].quantity,
+        price: sales[i].unitPrice, total: sales[i].quantity * sales[i].unitPrice,
+        date: dateStr, type: 'Bán hàng'
+        });
+        }
+
+        localStorage.setItem('orderHistory', JSON.stringify(orderHistory));
+        localStorage.removeItem('cart');
+        localStorage.removeItem('purchases');
+        localStorage.removeItem('sales');
+
+        alert('✅ ĐẶT HÀNG THÀNH CÔNG!\n\n👤 Khách hàng: ' + fullName + '\n📞 SĐT: ' + phone + '\n🏠 Địa chỉ: ' + fullAddress + '\n💰 Tổng tiền: ' + total.toLocaleString('vi-VN') + ' đ\n📦 Mã đơn: ' + orderId + '\n\nCảm ơn bạn đã mua hàng!');
+
+        window.location.href = 'index.html';
+        });
+        });
+    </script>
+</body>
+</html>

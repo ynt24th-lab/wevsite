@@ -299,12 +299,6 @@
                                         <p>Sản phẩm</p>
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="news.html" class="nav-link">
-                                        <i class="nav-icon bi bi-circle"></i>
-                                        <p>Tin tức</p>
-                                    </a>
-                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -317,13 +311,13 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="products.html" class="nav-link">
+                                    <a href="purchase.html" class="nav-link">
                                         <i class="nav-icon bi bi-circle"></i>
                                         <p>Mua hàng</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="news.html" class="nav-link">
+                                    <a href="sales.html" class="nav-link">
                                         <i class="nav-icon bi bi-circle"></i>
                                         <p>Bán hàng</p>
                                     </a>
@@ -332,7 +326,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon bi bi-box-seam-fill"></i>
+                                <i class="nav-icon bi bi-graph-up"></i>
                                 <p>
                                     Thống kê
                                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -340,15 +334,9 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="product.html" class="nav-link">
-                                        <i class="nav-icon bi bi-circle"></i>
-                                        <p>Doanh thu</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="news.html" class="nav-link">
-                                        <i class="nav-icon bi bi-circle"></i>
-                                        <p>Lượt truy cập</p>
+                                    <a href="order-history.html" class="nav-link">
+                                        <i class="nav-icon bi bi-clock-history"></i>
+                                        <p>Lịch sử mua hàng</p>
                                     </a>
                                 </li>
                             </ul>
@@ -421,7 +409,7 @@
 
 
                                 <div class="card-body">
-                                    <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#productInfo">
+                                    <button id="addProduct" type="button" class="btn btn-primary mb-2" >
                                         Thêm sản phẩm
                                     </button>
                                     <table id="productList" class="table table-bordered">
@@ -514,18 +502,18 @@
     <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
     <script>
         $(function () {
+            var isNew = true;
             var productList = [];
             var retrievedObject = localStorage.getItem('products');
-            if (retrievedObject != null)
-                productList = JSON.parse(retrievedObject);
-
-            showProduct();
+                         if (retrievedObject != null)
+                             productList = JSON.parse(retrievedObject);
+        showProduct();
             function showProduct() {
                 $("#productList tbody").html("");
                 for (var i = 0; i < productList.length; i++) {
                     var htmlProduct = '<tr class="align-middle">' +
                         '<td>' + (i + 1) + '</td>' +
-                        '<td>' + productList[i].name + '</td>' +
+                        '<td>' + productList[i].name + '<button data-id="'+ productList[i].id +'" class="deleteProduct"><i class="text-danger nav-icon bi bi-trash"></i></button><button data-id="'+ productList[i].id +'" class="editProduct"><i class="text-danger nav-icon bi bi-pencil-square"></i></button></td>' +
                         '<td>' + productList[i].price + '</td>' +
                         '</tr> ';
                     $("#productList tbody").append(htmlProduct);
@@ -536,7 +524,17 @@
                 var pName = $("#productName").val();
                 var pPicture = $("#productPicture").val();
                 var pPrice = $("#productPrice").val();
+               if(isNew)
                 productList.push({ id: pId, name: pName, picture: pPicture, price: pPrice });
+                else{
+                   for (var i = 0; i < productList.length; i++) {
+                    if (productList[i].id == pId) {
+                        productList[i].name =pName;
+                        productList[i].picture = pPicture;
+                        productList[i].price = pPrice;
+                  }
+               }
+        }
                 $("#productInfo").modal('toggle');
                 showProduct();
                 localStorage.clear();
@@ -545,7 +543,48 @@
                 $("#productName").val("");
                 $("#productPicture").val("");
                 $("#productPrice").val("");
+                $("#productId").removeAttr('disabled');
             })
+            $(".deleteProduct").click(function () {
+                  if (confirm("Xác nhận xóa sản phẩm...")) {
+                     var pId = $(this).data("id");
+                   for (var i = 0; i < productList.length; i++) {
+                      if (productList[i].id == pId) {
+                          productList.splice(i, 1);
+                           localStorage.clear();//
+                           localStorage.setItem("products", JSON.stringify(productList));
+                           location.reload ();
+                          return;
+                    }
+                  }
+                }
+           })
+            $("#addProduct").click(function (){
+               isNew = true;
+               $("#productId").val("");
+               $("#productName").val("");
+               $("#productPicture").val("");
+               $("#productPrice").val("");
+               $("#productId").removeAttr('disabled');
+               $("#productInfo").modal('show');
+        });
+            $(document).on("click", ".editProduct", function () {
+                isNew = false;
+               var pId = $(this).data("id"); 
+               var product = {};
+               for (var i = 0; i < productList.length; i++) {
+                     if (productList[i].id == pId) {
+                         product = productList[i];
+                         break;
+                      }
+                    }
+                  $("#productId").val(product.id);
+                  $("#productId").attr('disabled', 'disabled');
+                  $("#productName").val(product.name);
+                  $("#productPicture").val(product.picture);
+                  $("#productPrice").val(product.price);
+                  $("#productInfo").modal('show');
+                  })
         })
     </script>
 

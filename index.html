@@ -1,848 +1,685 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>BookStore - Thư viện sách trực tuyến</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Mua sách online, nhà sách trực tuyến, ebook, sách hay" name="keywords">
+        <meta content="BookStore - Trang thương mại điện tử bán sách uy tín với hàng ngàn đầu sách hay" name="description">
 
-<head>
-    <meta charset="utf-8">
-    <title>Xe Việt </title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet"> 
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
-        <div class="row">
-            <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-body pr-3" href=""><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</a>
-                    <span class="text-body">|</span>
-                    <a class="text-body px-3" href=""><i class="fa fa-envelope mr-2"></i>info@example.com</a>
-                </div>
-            </div>
-            <div class="col-md-6 text-center text-lg-right">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-body px-3" href="">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a class="text-body px-3" href="">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a class="text-body px-3" href="">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="text-body px-3" href="">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="text-body pl-3" href="">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-    <!-- Navbar Start -->
-    <div class="container-fluid position-relative nav-bar p-0">
-        <div class="position-relative px-lg-5" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="" class="navbar-brand">
-                    <h1 class="text-uppercase text-primary mb-1">Xe Việt </h1>
-                </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Trang chủ </a>
-                        <a href="about.html" class="nav-item nav-link">Giới thiệu </a>
-                        <a href="service.html" class="nav-item nav-link">khám phá </a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Xe </a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="car.html" class="dropdown-item">Danh sách xe </a>
-                                <a href="detail.html" class="dropdown-item">Thông tin chi tiết </a>
-                                <a href="booking.html" class="dropdown-item">Đặt xe </a>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Khác </a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="team.html" class="dropdown-item">Đội ngũ </a>
-                                <a href="testimonial.html" class="dropdown-item">Đánh giá </a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Liên hệ </a>
+    <body>
+        <!-- Top bar Start -->
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <i class="fa fa-envelope"></i>
+                        book@bookstore.com
                     </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- Navbar End -->
-    <!-- Search Start -->
-    <div class="container-fluid bg-white pt-3 px-lg-5">
-        <div class="row mx-n2">
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <select class="custom-select px-4 mb-3" style="height: 50px;">
-                    <option selected>Chọn loại xe </option>
-                    <option value="1">Xe điện </option>
-                    <option value="2">Xe đô thị </option>
-                    <option value="3">SUV</option>
-                </select>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <select class="custom-select px-4 mb-3" style="height: 50px;">
-                    <option selected>chọn thương hiệu</option>
-                    <option value="1">VinFast</option>
-                    <option value="2">THACO</option>
-                    <option value="3">Pega</option>
-                </select>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <div class="date mb-3" id="date" data-target-input="nearest">
-                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Date"
-                           data-target="#date" data-toggle="datetimepicker" />
-                </div>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <div class="time mb-3" id="time" data-target-input="nearest">
-                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Time"
-                           data-target="#time" data-toggle="datetimepicker" />
-                </div>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <select class="custom-select px-4 mb-3" style="height: 50px;">
-                    <option selected>Select A Car</option>
-                    <option value="1">VinFast</option>
-                    <option value="2">THACO</option>
-                    <option value="3">Pega</option>
-                </select>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <button class="btn btn-primary btn-block mb-3" type="submit" style="height: 50px;">Khám phá</button>
-            </div>
-        </div>
-    </div>
-    <!-- Search End -->
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0" style="margin-bottom: 90px;">
-        <div id="header-carousel" class="carousel slide" data-ride="carousel">
-
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-md-3">Khám phá</h4>
-                            <h1 class="display-1 text-white mb-md-4">
-                                Những mẫu xe hiện đại được phát triển trong nước
-                            </h1>
-                            <a class="btn btn-primary py-md-3 px-md-5 mt-2">Tìm hiểu thêm</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-md-3">Công nghệ</h4>
-                            <h1 class="display-1 text-white mb-md-4">
-                                Hướng đến trải nghiệm di chuyển thông minh và tiện nghi
-                            </h1>
-                            <a class="btn btn-primary py-md-3 px-md-5 mt-2">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
-                <div class="btn btn-dark" style="width: 45px; height: 45px;">
-                    <span class="carousel-control-prev-icon mb-n2"></span>
-                </div>
-            </a>
-
-            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
-                <div class="btn btn-dark" style="width: 45px; height: 45px;">
-                    <span class="carousel-control-next-icon mb-n2"></span>
-                </div>
-            </a>
-
-        </div>
-    </div>
-    <!-- Carousel End -->
-    <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <h1 class="display-1 text-primary text-center">01</h1>
-            <h1 class="display-4 text-uppercase text-center mb-5">
-                Welcome To <span class="text-primary">Xe Việt</span>
-            </h1>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-10 text-center">
-                    <img class="w-75 mb-4" src="img/about-y.png" alt="">
-                    <p>
-                        Xe Việt mang đến những dòng xe được phát triển và hoàn thiện với công nghệ hiện đại,
-                        đáp ứng nhu cầu di chuyển ngày càng cao. Với thiết kế tối ưu, vận hành ổn định và
-                        thân thiện với người dùng, các sản phẩm luôn hướng đến sự tiện nghi và an toàn
-                        trong từng hành trình.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row mt-3">
-                <div class="col-lg-4 mb-2">
-                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
-                            <i class="fa fa-2x fa-headset text-secondary"></i>
-                        </div>
-                        <h4 class="text-uppercase m-0">Hỗ trợ khách hàng 24/7</h4>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-2">
-                    <div class="d-flex align-items-center bg-secondary p-4 mb-4" style="height: 150px;">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
-                            <i class="fa fa-2x fa-car text-secondary"></i>
-                        </div>
-                        <h4 class="text-light text-uppercase m-0">Đặt xe linh hoạt mọi lúc</h4>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-2">
-                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
-                            <i class="fa fa-2x fa-map-marker-alt text-secondary"></i>
-                        </div>
-                        <h4 class="text-uppercase m-0">Nhiều điểm đón thuận tiện</h4>
+                    <div class="col-sm-6">
+                        <i class="fa fa-phone-alt"></i>
+                        +012-345-6789
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- About End -->
-    <!-- Services Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <h1 class="display-1 text-primary text-center">02</h1>
-            <h1 class="display-4 text-uppercase text-center mb-5">Dịch vụ của chúng tôi</h1>
+        <!-- Top bar End -->
+        <!-- Nav Bar Start -->
+        <div class="nav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-            <div class="row">
-
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-taxi text-secondary"></i>
-                            </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">01</h1>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.html" class="nav-item nav-link active">Trang chủ</a>
+                            <a href="product-list.html" class="nav-item nav-link">Sản phẩm</a>
+                            <a href="cart.html" class="nav-item nav-link">Giỏ hàng</a>
+                            <a href="checkout.html" class="nav-item nav-link">Thanh toán</a>
+                            <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
                         </div>
-                        <h4 class="text-uppercase mb-3">Thuê xe linh hoạt</h4>
-                        <p class="m-0">Cung cấp các giải pháp di chuyển tiện lợi với nhiều lựa chọn phương tiện, phù hợp nhu cầu cá nhân và doanh nghiệp.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="service-item active d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-money-check-alt text-secondary"></i>
-                            </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">02</h1>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Hỗ trợ tài chính</h4>
-                        <p class="m-0">Giúp khách hàng dễ dàng tiếp cận các dòng xe thông qua nhiều phương án thanh toán linh hoạt và phù hợp.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-car text-secondary"></i>
-                            </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">03</h1>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Kiểm tra xe</h4>
-                        <p class="m-0">Đảm bảo phương tiện luôn trong tình trạng vận hành tốt với quy trình kiểm tra kỹ thuật định kỳ.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-cogs text-secondary"></i>
-                            </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">04</h1>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Bảo dưỡng</h4>
-                        <p class="m-0">Cung cấp dịch vụ bảo trì, giúp xe hoạt động ổn định, nâng cao tuổi thọ và hiệu suất sử dụng.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-spray-can text-secondary"></i>
-                            </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">05</h1>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Làm đẹp xe</h4>
-                        <p class="m-0">Dịch vụ chăm sóc và hoàn thiện ngoại hình xe, mang lại diện mạo mới và chuyên nghiệp.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-pump-soap text-secondary"></i>
-                            </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">06</h1>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Chăm sóc xe</h4>
-                        <p class="m-0">Giữ xe luôn sạch sẽ, bền đẹp và đảm bảo trải nghiệm sử dụng thoải mái cho người dùng.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Services End -->
-    <!-- Banner Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="bg-banner py-5 px-4 text-center">
-                <div class="py-5">
-                    <h1 class="display-1 text-uppercase text-primary mb-4">Ưu đãi hấp dẫn</h1>
-                    <h1 class="text-uppercase text-light mb-4">Dành cho người dùng mới</h1>
-                    <p class="mb-4">
-                        Áp dụng trong thời gian giới hạn, nhiều quyền lợi khi trải nghiệm hệ thống dịch vụ.
-                    </p>
-                    <a class="btn btn-primary mt-2 py-3 px-5" href="">Đăng ký ngay</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Banner End -->
-    <!-- Rent A Car Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <h1 class="display-1 text-primary text-center">03</h1>
-            <h1 class="display-4 text-uppercase text-center mb-5">Khám phá xe phù hợp</h1>
-
-            <div class="row">
-
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="rent-item mb-4">
-                        <img class="img-fluid mb-4" src="img/car-rent-1-y.png" alt="">
-                        <h4 class="text-uppercase mb-4">Dòng xe đô thị</h4>
-                        <div class="d-flex justify-content-center mb-4">
-                            <div class="px-2">
-                                <i class="fa fa-car text-primary mr-1"></i>
-                                <span>2023</span>
-                            </div>
-                            <div class="px-2 border-left border-right">
-                                <i class="fa fa-cogs text-primary mr-1"></i>
-                                <span>TỰ ĐỘNG</span>
-                            </div>
-                            <div class="px-2">
-                                <i class="fa fa-road text-primary mr-1"></i>
-                                <span>Hiệu suất cao</span>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary px-3" href="">Trải nghiệm ngay</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="rent-item active mb-4">
-                        <img class="img-fluid mb-4" src="img/car-rent-2-y.png" alt="">
-                        <h4 class="text-uppercase mb-4">Dòng xe tiện nghi</h4>
-                        <div class="d-flex justify-content-center mb-4">
-                            <div class="px-2">
-                                <i class="fa fa-car text-primary mr-1"></i>
-                                <span>2023</span>
-                            </div>
-                            <div class="px-2 border-left border-right">
-                                <i class="fa fa-cogs text-primary mr-1"></i>
-                                <span>TỰ ĐỘNG</span>
-                            </div>
-                            <div class="px-2">
-                                <i class="fa fa-road text-primary mr-1"></i>
-                                <span>Ổn định</span>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary px-3" href="">Trải nghiệm ngay</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="rent-item mb-4">
-                        <img class="img-fluid mb-4" src="img/car-rent-3-y.png" alt="">
-                        <h4 class="text-uppercase mb-4">Dòng xe hiện đại</h4>
-                        <div class="d-flex justify-content-center mb-4">
-                            <div class="px-2">
-                                <i class="fa fa-car text-primary mr-1"></i>
-                                <span>2023</span>
-                            </div>
-                            <div class="px-2 border-left border-right">
-                                <i class="fa fa-cogs text-primary mr-1"></i>
-                                <span>TỰ ĐỘNG</span>
-                            </div>
-                            <div class="px-2">
-                                <i class="fa fa-road text-primary mr-1"></i>
-                                <span>Tiết kiệm</span>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary px-3" href="">Trải nghiệm ngay</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="rent-item mb-4">
-                        <img class="img-fluid mb-4" src="img/car-rent-4-y.png" alt="">
-                        <h4 class="text-uppercase mb-4">Dòng xe gia đình</h4>
-                        <div class="d-flex justify-content-center mb-4">
-                            <div class="px-2">
-                                <i class="fa fa-car text-primary mr-1"></i>
-                                <span>2023</span>
-                            </div>
-                            <div class="px-2 border-left border-right">
-                                <i class="fa fa-cogs text-primary mr-1"></i>
-                                <span>TỰ ĐỘNG</span>
-                            </div>
-                            <div class="px-2">
-                                <i class="fa fa-road text-primary mr-1"></i>
-                                <span>Thoải mái</span>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary px-3" href="">Trải nghiệm ngay</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="rent-item mb-4">
-                        <img class="img-fluid mb-4" src="img/car-rent-5-y.png" alt="">
-                        <h4 class="text-uppercase mb-4">Dòng xe cao cấp</h4>
-                        <div class="d-flex justify-content-center mb-4">
-                            <div class="px-2">
-                                <i class="fa fa-car text-primary mr-1"></i>
-                                <span>2023</span>
-                            </div>
-                            <div class="px-2 border-left border-right">
-                                <i class="fa fa-cogs text-primary mr-1"></i>
-                                <span>TỰ ĐỘNG</span>
-                            </div>
-                            <div class="px-2">
-                                <i class="fa fa-road text-primary mr-1"></i>
-                                <span>Hiệu năng</span>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary px-3" href="">Trải nghiệm ngay</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="rent-item mb-4">
-                        <img class="img-fluid mb-4" src="img/car-rent-6-y.png" alt="">
-                        <h4 class="text-uppercase mb-4">Dòng xe đa dụng</h4>
-                        <div class="d-flex justify-content-center mb-4">
-                            <div class="px-2">
-                                <i class="fa fa-car text-primary mr-1"></i>
-                                <span>2023</span>
-                            </div>
-                            <div class="px-2 border-left border-right">
-                                <i class="fa fa-cogs text-primary mr-1"></i>
-                                <span>TỰ ĐỘNG</span>
-                            </div>
-                            <div class="px-2">
-                                <i class="fa fa-road text-primary mr-1"></i>
-                                <span>Bền bỉ</span>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary px-3" href="">Trải nghiệm ngay</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Rent A Car End -->
-    <!-- Team Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <h1 class="display-1 text-primary text-center">04</h1>
-            <h1 class="display-4 text-uppercase text-center mb-5">Đội ngũ của chúng tôi</h1>
-
-            <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
-
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-1-y.jpg" alt="">
-                    <div class="position-relative py-4">
-                        <h4 class="text-uppercase">Kỹ sư vận hành</h4>
-                        <p class="m-0">Phụ trách tối ưu hiệu suất và trải nghiệm vận hành xe.</p>
-                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-2-y.jpg" alt="">
-                    <div class="position-relative py-4">
-                        <h4 class="text-uppercase">Chuyên viên kỹ thuật</h4>
-                        <p class="m-0">Đảm bảo chất lượng và độ an toàn cho từng phương tiện.</p>
-                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-3-y.jpg" alt="">
-                    <div class="position-relative py-4">
-                        <h4 class="text-uppercase">Tư vấn khách hàng</h4>
-                        <p class="m-0">Hỗ trợ lựa chọn giải pháp di chuyển phù hợp nhất.</p>
-                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-4-y.jpg" alt="">
-                    <div class="position-relative py-4">
-                        <h4 class="text-uppercase">Chuyên viên dịch vụ</h4>
-                        <p class="m-0">Phát triển và nâng cao chất lượng dịch vụ khách hàng.</p>
-                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-    <!-- Banner Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row mx-0">
-
-                <div class="col-lg-6 px-0">
-                    <div class="px-5 bg-secondary d-flex align-items-center justify-content-between" style="height: 350px;">
-                        <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="img/banner-left.png" alt="">
-                        <div class="text-right">
-                            <h3 class="text-uppercase text-light mb-3">Trở thành tài xế</h3>
-                            <p class="mb-4">Tham gia vào hệ sinh thái di chuyển hiện đại, thân thiện với môi trường.</p>
-                            <a class="btn btn-primary py-2 px-4" href="">Bắt đầu ngay</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 px-0">
-                    <div class="px-5 bg-dark d-flex align-items-center justify-content-between" style="height: 350px;">
-                        <div class="text-left">
-                            <h3 class="text-uppercase text-light mb-3">Tìm kiếm phương tiện</h3>
-                            <p class="mb-4">Khám phá những dòng xe hiện đại, phù hợp với nhu cầu di chuyển của bạn.</p>
-                            <a class="btn btn-primary py-2 px-4" href="">Bắt đầu ngay</a>
-                        </div>
-                        <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4" src="img/banner-right.png" alt="">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Banner End -->
-    <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <h1 class="display-1 text-primary text-center">05</h1>
-            <h1 class="display-4 text-uppercase text-center mb-5">Khách hàng chia sẻ</h1>
-
-            <div class="owl-carousel testimonial-carousel">
-
-                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="img-fluid ml-n4" src="img/testimonial-1-y.jpg" alt="">
-                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
-                    </div>
-                    <h4 class="text-uppercase mb-2">Nguyễn Văn A</h4>
-                    <i class="mb-2">Nhân viên văn phòng</i>
-                    <p class="m-0">Xe vận hành êm ái, trải nghiệm lái rất ổn định và dễ sử dụng trong thành phố.</p>
-                </div>
-
-                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="img-fluid ml-n4" src="img/testimonial-2-y.jpg" alt="">
-                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
-                    </div>
-                    <h4 class="text-uppercase mb-2">Trần Thị B</h4>
-                    <i class="mb-2">Giáo viên</i>
-                    <p class="m-0">Thiết kế hiện đại, phù hợp với nhu cầu di chuyển hàng ngày và khá tiết kiệm.</p>
-                </div>
-
-                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="img-fluid ml-n4" src="img/testimonial-3-y.jpg" alt="">
-                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
-                    </div>
-                    <h4 class="text-uppercase mb-2">Lê Văn C</h4>
-                    <i class="mb-2">Kỹ sư</i>
-                    <p class="m-0">Cảm giác lái chắc chắn, công nghệ hỗ trợ thông minh và dễ thao tác.</p>
-                </div>
-
-                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="img-fluid ml-n4" src="img/testimonial-4-y.jpg" alt="">
-                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
-                    </div>
-                    <h4 class="text-uppercase mb-2">Phạm Thị D</h4>
-                    <i class="mb-2">Doanh nhân</i>
-                    <p class="m-0">Trải nghiệm tổng thể rất tốt, phù hợp cho cả công việc và di chuyển cá nhân.</p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-    <!-- Contact Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <h1 class="display-1 text-primary text-center">06</h1>
-            <h1 class="display-4 text-uppercase text-center mb-5">Liên hệ với chúng tôi</h1>
-
-            <div class="row">
-
-                <div class="col-lg-7 mb-2">
-                    <div class="contact-form bg-light mb-4" style="padding: 30px;">
-                        <form>
-                            <div class="row">
-                                <div class="col-6 form-group">
-                                    <input type="text" class="form-control p-4" placeholder="Họ và tên" required>
-                                </div>
-                                <div class="col-6 form-group">
-                                    <input type="email" class="form-control p-4" placeholder="Email" required>
+                        <div class="navbar-nav ml-auto">
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tài khoản</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Đăng nhập</a>
+                                    <a href="#" class="dropdown-item">Đăng ký</a>
                                 </div>
                             </div>
-
-                            <div class="form-group">
-                                <input type="text" class="form-control p-4" placeholder="Tiêu đề" required>
-                            </div>
-
-                            <div class="form-group">
-                                <textarea class="form-control py-3 px-4" rows="5" placeholder="Nội dung" required></textarea>
-                            </div>
-
-                            <div>
-                                <button class="btn btn-primary py-3 px-5" type="submit">Gửi liên hệ</button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
-                </div>
-
-                <div class="col-lg-5 mb-2">
-                    <div class="bg-secondary d-flex flex-column justify-content-center px-5 mb-4" style="height: 435px;">
-
-                        <div class="d-flex mb-3">
-                            <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
-                            <div class="mt-n1">
-                                <h5 class="text-light">Trụ sở chính</h5>
-                                <p>Hồ Chí Minh, Việt Nam</p>
-                            </div>
-                        </div>
-
-                        <div class="d-flex mb-3">
-                            <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
-                            <div class="mt-n1">
-                                <h5 class="text-light">Chi nhánh</h5>
-                                <p>Hà Nội, Việt Nam</p>
-                            </div>
-                        </div>
-
-                        <div class="d-flex mb-3">
-                            <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
-                            <div class="mt-n1">
-                                <h5 class="text-light">Hỗ trợ khách hàng</h5>
-                                <p>support@xeviet.vn</p>
-                            </div>
-                        </div>
-
-                        <div class="d-flex">
-                            <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
-                            <div class="mt-n1">
-                                <h5 class="text-light">Hỗ trợ kỹ thuật</h5>
-                                <p class="m-0">tech@xeviet.vn</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
+                </nav>
             </div>
         </div>
-    </div>
-    <!-- Contact End -->
-    <!-- Vendor Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <h5 class="text-uppercase text-center mb-4">Đối tác & hệ sinh thái</h5>
-
-            <div class="owl-carousel vendor-carousel">
-
-                <div class="bg-light p-4">
-                    <img src="img/vendor-1.png" alt="Đối tác công nghệ">
-                </div>
-
-                <div class="bg-light p-4">
-                    <img src="img/vendor-2.png" alt="Đối tác năng lượng">
-                </div>
-
-                <div class="bg-light p-4">
-                    <img src="img/vendor-3.png" alt="Đối tác sản xuất">
-                </div>
-
-                <div class="bg-light p-4">
-                    <img src="img/vendor-4.png" alt="Đối tác vận hành">
-                </div>
-
-                <div class="bg-light p-4">
-                    <img src="img/vendor-5.png" alt="Đối tác tài chính">
-                </div>
-
-                <div class="bg-light p-4">
-                    <img src="img/vendor-6.png" alt="Đối tác dịch vụ">
-                </div>
-
-                <div class="bg-light p-4">
-                    <img src="img/vendor-7.png" alt="Đối tác hạ tầng">
-                </div>
-
-                <div class="bg-light p-4">
-                    <img src="img/vendor-8.png" alt="Đối tác giải pháp">
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Vendor End -->
-    <!-- Footer Start -->
-    <div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
-        <div class="row pt-5">
-
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-uppercase text-light mb-4">Liên hệ</h4>
-                <p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i>Hồ Chí Minh, Việt Nam</p>
-                <p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"></i>+84 123 456 789</p>
-                <p><i class="fa fa-envelope text-white mr-3"></i>contact@xeviet.vn</p>
-
-                <h6 class="text-uppercase text-white py-2">Kết nối với chúng tôi</h6>
-                <div class="d-flex justify-content-start">
-                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-lg btn-dark btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-uppercase text-light mb-4">Liên kết</h4>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Chính sách</a>
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Điều khoản sử dụng</a>
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Đăng ký thành viên</a>
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Chương trình hợp tác</a>
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Hoàn trả & hỗ trợ</a>
-                    <a class="text-body" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Trợ giúp</a>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-uppercase text-light mb-4">Thư viện hình ảnh</h4>
-                <div class="row mx-n1">
-                    <div class="col-4 px-1 mb-2"><a href=""><img class="w-100" src="img/gallery-1-y.jpg" alt=""></a></div>
-                    <div class="col-4 px-1 mb-2"><a href=""><img class="w-100" src="img/gallery-2-y.jpg" alt=""></a></div>
-                    <div class="col-4 px-1 mb-2"><a href=""><img class="w-100" src="img/gallery-3-y.jpg" alt=""></a></div>
-                    <div class="col-4 px-1 mb-2"><a href=""><img class="w-100" src="img/gallery-4.jpg" alt=""></a></div>
-                    <div class="col-4 px-1 mb-2"><a href=""><img class="w-100" src="img/gallery-5.jpg" alt=""></a></div>
-                    <div class="col-4 px-1 mb-2"><a href=""><img class="w-100" src="img/gallery-6.jpg" alt=""></a></div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-uppercase text-light mb-4">Nhận tin mới</h4>
-                <p class="mb-4">Cập nhật thông tin mới nhất về công nghệ và các dòng xe hiện đại.</p>
-
-                <div class="w-100 mb-3">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-dark border-dark" style="padding: 25px;" placeholder="Email của bạn">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary text-uppercase px-3">Đăng ký</button>
+        <!-- Nav Bar End -->
+        <!-- Bottom Bar Start -->
+        <div class="bottom-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="BookStorelogo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="search">
+                            <input type="text" placeholder="Tìm kiếm sách">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="user">
+                            <a href="wishlist.html" class="btn wishlist">
+                                <i class="fa fa-heart"></i>
+                                <span>(0)</span>
+                            </a>
+                            <a href="cart.html" class="btn cart">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span>(0)</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-
-                <i>Luôn cập nhật xu hướng di chuyển tương lai</i>
             </div>
-
         </div>
-    </div>
+        <!-- Bottom Bar End -->
+        <!-- Main Slider Start -->
+        <div class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <nav class="navbar bg-light">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa fa-home"></i>Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i>Sách bán chạy</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa fa-plus-square"></i>Sách mới</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa fa-female"></i>Văn học trong nước</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa fa-child"></i>Văn học nước ngoài</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa fa-tshirt"></i>Kinh tế - Khởi nghiệp</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa fa-mobile-alt"></i>Thiếu nhi - truyện tranh</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa fa-microchip"></i>Giáo khoa - Tham khảo</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="header-slider normal-slider">
+                            <div class="header-slider-item">
+                                <img src="img/slider-1.jpg" alt="Slider Image" width="780" height="380" />
+                                <div class="header-slider-caption">
+                                    <p>Khám phá những cuốn sách hay nhất mọi thời đại</p>
+                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Mua ngay</a>
+                                </div>
+                            </div>
+                            <div class="header-slider-item">
+                                <img src="img/slider-2.jpg" alt="Slider Image" width="780" height="380" />
+                                <div class="header-slider-caption">
+                                    <p>Ưu đãi lên đến 50% cho thành viên mới</p>
+                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Mua ngay</a>
+                                </div>
+                            </div>
+                            <div class="header-slider-item">
+                                <img src="img/slider-3.jpg" alt="Slider Image" width="780" height="380" />
+                                <div class="header-slider-caption">
+                                    <p>Giao hàng miễn phí toàn quốc cho đơn hàng từ 200k</p>
+                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="header-img">
+                            <div class="img-item">
+                                <img src="img/category-1.jpg" />
+                                <a class="img-text" href="">
+                                    <p>Sách bán chạy tuần qua</p>
+                                </a>
+                            </div>
+                            <div class="img-item">
+                                <img src="img/category-2.png" />
+                                <a class="img-text" href="">
+                                    <p>Combo sách giảm giá 30%</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Slider End -->
+        <!-- Brand Start -->
+        <div class="brand">
+            <div class="container-fluid">
+                <div class="brand-slider">
+                    <div class="brand-item"><img src="img/brand-1.png" alt=""></div>
+                    <div class="brand-item"><img src="img/brand-2.png" alt=""></div>
+                    <div class="brand-item"><img src="img/brand-3.png" alt=""></div>
+                    <div class="brand-item"><img src="img/brand-4.png" alt=""></div>
+                    <div class="brand-item"><img src="img/brand-5.png" alt=""></div>
+                    <div class="brand-item"><img src="img/brand-6.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <!-- Brand End -->
+        <!-- Feature Start-->
+        <div class="feature">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-6 feature-col">
+                        <div class="feature-content">
+                            <i class="fab fa-cc-mastercard"></i>
+                            <h2>Thanh toán an toàn</h2>
+                            <p>
+                                Thanh toán trực tuyến an toàn, bảo mật tuyệt đối
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 feature-col">
+                        <div class="feature-content">
+                            <i class="fa fa-truck"></i>
+                            <h2>Giao hàng toàn quốc</h2>
+                            <p>
+                                Giao sách nhanh chóng đến mọi tỉnh thành
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 feature-col">
+                        <div class="feature-content">
+                            <i class="fa fa-sync-alt"></i>
+                            <h2>Đổi trả trong 3 ngày</h2>
+                            <p>
+                                Sách lỗi, đổi ngay không cần điều kiện
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 feature-col">
+                        <div class="feature-content">
+                            <i class="fa fa-comments"></i>
+                            <h2>Hỗ trợ 24/7</h2>
+                            <p>
+                                Tư vấn và hỗ trợ khách hàng mọi lúc
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End-->
+        <!-- Category Start-->
+        <div class="category">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="category-item ch-400">
+                            <img src="img/category-3.jpg" />
+                            <a class="category-name" href="">
+                                <p>Văn học Việt Nam đương đại</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="category-item ch-250">
+                            <img src="img/category-4.jpg" />
+                            <a class="category-name" href="">
+                                <p>Tiểu thuyết nước ngoài</p>
+                            </a>
+                        </div>
+                        <div class="category-item ch-150">
+                            <img src="img/category-5.1.jpg" />
+                            <a class="category-name" href="">
+                                <p>Kỹ năng sống - Làm giàu</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="category-item ch-150">
+                            <img src="img/category-6.1.jpg" />
+                            <a class="category-name" href="">
+                                <p>Truyện tranh - Manga</p>
+                            </a>
+                        </div>
+                        <div class="category-item ch-250">
+                            <img src="img/categogy-7.1.jpg" />
+                            <a class="category-name" href="">
+                                <p>Sách khoa học - Công nghệ</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="category-item ch-400">
+                            <img src="img/category-8.png" />
+                            <a class="category-name" href="">
+                                <p>Sách thiếu nhi - Nuôi dạy con</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Category End-->
+        <!-- Call to Action Start -->
+        <div class="call-to-action">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h1>Cần tư vấn chọn sách?</h1>
+                        <p>Gọi ngay cho chúng tôi để được hỗ trợ miễn phí</p>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="tel:0123456789">+012-345-6789</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Call to Action End -->
+        <!-- Featured Product Start -->
+        <div class="featured-product product">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h1>Sách nổi bật</h1>
+                </div>
+                <div class="row align-items-center product-slider product-slider-4" id="productList">
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <div class="product-title">
+                                <a href="#">Product Name</a>
+                                <div class="ratting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-image">
+                                <a href="product-detail.html">
+                                    <img src="img/product-1.jpg" alt="Product Image">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                    <a href="#"><i class="fa fa-heart"></i></a>
+                                    <a href="#"><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <h3><span>đ</span>99</h3>
+                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="container-fluid bg-dark py-4 px-sm-3 px-md-5">
-        <p class="mb-2 text-center text-body">&copy; <a href="#">Xe Việt</a>. Tất cả quyền được bảo lưu.</p>
-        <p class="m-0 text-center text-body">Thiết kế bởi <a href="#">Nhóm phát triển</a></p>
-    </div>
-    <!-- Footer End -->
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Featured Product End -->
+        <!-- Newsletter Start -->
+        <div class="newsletter">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Đăng ký nhận bản tin</h1>
+                        <p>Cập nhật sách mới và ưu đãi đặc biệt</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form">
+                            <input type="email" value="Your email here">
+                            <button>Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Newsletter End -->
+        <!-- Recent Product Start -->
+        <!-- Recent Product End -->
+        <!-- Review Start -->
+        <div class="review">
+            <div class="container-fluid">
+                <div class="row align-items-center review-slider normal-slider">
+                    <div class="col-md-6">
+                        <div class="review-slider-item">
+                            <div class="review-img">
+                                <img src="img/review-1.jpg" alt="Image">
+                            </div>
+                            <div class="review-text">
+                                <h2>Nguyễn Văn A</h2>
+                                <h3>Giáo viên</h3>
+                                <div class="ratting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>
+                                    Sách hay, đóng gói cẩn thận, giao hàng nhanh. Tôi rất hài lòng!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="review-slider-item">
+                            <div class="review-img">
+                                <img src="img/review-2.jpg" alt="Image">
+                            </div>
+                            <div class="review-text">
+                                <h2>Trần Thị B</h2>
+                                <h3>Nhân viên văn phòng</h3>
+                                <div class="ratting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>
+                                    Kho sách đa dạng, giá cả hợp lý, sẽ ủng hộ dài dài.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="review-slider-item">
+                            <div class="review-img">
+                                <img src="img/review-3.jpg" alt="Image">
+                            </div>
+                            <div class="review-text">
+                                <h2>Lê Văn C</h2>
+                                <h3>
+                                    Sinh viên/<h3>
+                                        <div class="ratting">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p>
+                                            Mua sách ở đây mình được tặng kèm bookmark rất xinh. Cảm ơn shop!
+                                        </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Review End -->
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Liên hệ</h2>
+                            <div class="contact-info">
+                                <p><i class="fa fa-map-marker"></i>123 Đường Sách, Quận 1, TP.HCM</p>
+                                <p><i class="fa fa-envelope"></i>book@bookstore.com</p>
+                                <p><i class="fa fa-phone"></i>+123-456-7890</p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Theo dõi chúng tôi</h2>
+                            <div class="contact-info">
+                                <div class="social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Thông tin</h2>
+                            <ul>
+                                <li><a href="#">Về chúng tôi </a></li>
+                                <li><a href="#">Chính sách bảo mật</a></li>
+                                <li><a href="#">Điều khoản sử dụng</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Hỗ trợ</h2>
+                            <ul>
+                                <li><a href="#">Chính sách thanh toán</a></li>
+                                <li><a href="#">Chính sách vận chuyển</a></li>
+                                <li><a href="#">Chính sách đổi trả</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="row payment align-items-center">
+                    <div class="col-md-6">
+                        <div class="payment-method">
+                            <h2>Chúng tôi chấp nhận:</h2>
+                            <img src="img/payment-method.png" alt="Phương thức thanh toán" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="payment-security">
+                            <h2>Bảo mật bởi:</h2>
+                            <img src="img/godaddy.svg" alt="Bảo mật thanh toán" />
+                            <img src="img/norton.svg" alt="Bảo mật thanh toán" />
+                            <img src="img/ssl.svg" alt="Bảo mật thanh toán" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        <!-- Footer Bottom Start -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 copyright">
+                        <p>Copyright &copy; <a href="#">Your Site Name</a>. All Rights Reserved</p>
+                    </div>
+
+                    <div class="col-md-6 template-by">
+                        <!--/*** The author’s attribution link must remain intact in the template. ***/-->
+                        <!--/*** If you wish to remove this credit link, please purchase the Pro Version . ***/-->
+                        <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom End -->
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script>
+            $(function () {
+            var productList = [];
+            var retrievedObject = localStorage.getItem('products');
+            if (retrievedObject != null)
+            productList = JSON.parse(retrievedObject);
+            showProduct();
+            function showProduct(){
+            $("#productList").html("");
+            for ( var i = 0; i<productList.length; i++) {
+            var productHTML = '<div class="col-lg-3"> ' +
+            '<div class="product-item"> ' +
+            '<div class="product-title"> ' +
+            '<a href="#">'+ productList[i].name +'</a> ' +
+            '<div class="ratting"> ' +
+            '<i class="fa fa-star"></i> ' +
+            '<i class="fa fa-star"></i> ' +
+            '<i class="fa fa-star"></i> ' +
+            '<i class="fa fa-star"></i> ' +
+            '<i class="fa fa-star"></i> ' +
+            '</div> ' +
+            '</div> ' +
+            '<div class="product-image"> ' +
+            '<a href="product-detail.html"> ' +
+            '<img src="img/'+ productList[i].picture  +'" alt="Product Image"> ' +
+            '</a> ' +
+            '<div class="product-action"> ' +
+            '<a href="#"><i class="fa fa-cart-plus"></i></a> ' +
+            '<a href="#"><i class="fa fa-heart"></i></a> ' +
+            '<a href="#"><i class="fa fa-search"></i></a> ' +
+            '</div> ' +
+            '</div> ' +
+            '<div class="product-price"> ' +
+            '<h3><span>đ</span>'+ productList[i].price +'</h3> ' +
+            '<a class="btn" href="">cart.html<i class="fa fa-shopping-cart"></i>Mua ngay</a> ' +
+            '</div> ' +
+            '</div> ' +
+            '</div>';
+            $("#productList").append(productHTML);
+            }
+            }
+            })
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+            $(function() {
+            // Lấy giỏ hàng
+            var cart = [];
+            var cartData = localStorage.getItem('cart');
+            if (cartData) cart = JSON.parse(cartData);
+
+            function updateCartCount() {
+            var total = 0;
+            for (var i = 0; i < cart.length; i++) {
+            total += cart[i].quantity;
+            }
+            $('.cart span').text('(' + total + ')');
+            }
+
+            // Thêm vào giỏ
+            window.addToCart = function(product) {
+            var found = false;
+            for (var i = 0; i < cart.length; i++) {
+            if (cart[i].id == product.id && cart[i].type == 'product') {
+            cart[i].quantity++;
+            found = true;
+            break;
+            }
+            }
+            if (!found) {
+            cart.push({
+            id: product.id,
+            name: product.name,
+            price: product.price,
+            picture: product.picture,
+            quantity: 1,
+            type: 'product'
+            });
+            }
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+            alert('Đã thêm ' + product.name + ' vào giỏ hàng!');
+            };
+
+            // Gắn sự kiện mua ngay
+            $(document).on('click', '.product-price .btn', function(e) {
+            e.preventDefault();
+            var $item = $(this).closest('.product-item');
+            var name = $item.find('.product-title a').text();
+            var priceText = $item.find('.product-price h3').text().replace(/[^0-9]/g, '');
+            var price = parseInt(priceText) || 0;
+            var img = $item.find('.product-image img').attr('src');
+            var product = {
+            id: Date.now(),
+            name: name,
+            price: price,
+            picture: img,
+            quantity: 1
+            };
+            addToCart(product);
+            });
+
+            updateCartCount();
+
+            // Lấy sản phẩm từ admin
+            var products = [];
+            var productData = localStorage.getItem('products');
+            if (productData) products = JSON.parse(productData);
+
+            function showProduct() {
+    var container = $("#productList");
+    container.html(""); 
+
+    // (rom)
+    var rowHtml = '<div class="row">';
+    for (var i = 0; i < products.length; i++) {
+        var price = products[i].price.toLocaleString('vi-VN');
+        rowHtml += '<div class="col-lg-3 col-md-4 col-sm-6 mb-4">' +
+                    '<div class="product-item">' +
+                        '<div class="product-title">' +
+                            '<a href="#">' + products[i].name + '</a>' +
+                            '<div class="ratting">★★★★★</div>' +
+                        '</div>' +
+                        '<div class="product-image">' +
+                            '<img src="img/' + (products[i].picture || 'default.jpg') + '" alt="Sản phẩm" style="width:100%; height:200px; object-fit:cover;">' +
+                        '</div>' +
+                        '<div class="product-price">' +
+                            '<h3><span>đ</span>' + price + '</h3>' +
+                            '<a class="btn" href="cart.html"><i class="fa fa-shopping-cart"></i>Mua ngay</a>' +
+                        '</div>' +
+                    '</div>' +
+                '</div>';
+    }
+    rowHtml += '</div>'; // Đóng row
+
+    container.append(rowHtml);
+}
+
+            showProduct();
+            });
+        </script>
+    </body>
 </html>

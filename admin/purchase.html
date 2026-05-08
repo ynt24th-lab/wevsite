@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>AdminLTE 4 | Quản lý Mua hàng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#007bff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.11.0/styles/overlayscrollbars.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="dist/css/adminlte.css" />
+</head>
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+    <div class="app-wrapper">
+        <!-- Header -->
+        <nav class="app-header navbar navbar-expand bg-body">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-lte-toggle="sidebar" href="#" role="button">
+                            <i class="bi bi-list"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-search"></i></a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-bs-toggle="dropdown" href="#"><i class="bi bi-chat-text"></i><span class="navbar-badge badge text-bg-danger">3</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-bs-toggle="dropdown" href="#"><i class="bi bi-bell-fill"></i><span class="navbar-badge badge text-bg-warning">15</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-lte-toggle="fullscreen"><i class="bi bi-arrows-fullscreen"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Sidebar -->
+        <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
+            <div class="sidebar-brand">
+                <a href="index.html" class="brand-link">
+                    <img src="../assets/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image opacity-75 shadow" />
+                    <span class="brand-text fw-light">AdminLTE 4</span>
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <nav class="mt-2">
+                    <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="navigation" data-accordion="false" id="navigation">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="nav-icon bi bi-house-heart-fill"></i>
+                                <p>Trang chủ</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon bi bi-box-seam-fill"></i>
+                                <p>Danh mục <i class="nav-arrow bi bi-chevron-right"></i></p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item"><a href="products.html" class="nav-link"><i class="nav-icon bi bi-circle"></i><p>Sản phẩm</p></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon bi bi-box-seam-fill"></i>
+                                <p>Nghiệp vụ <i class="nav-arrow bi bi-chevron-right"></i></p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item"><a href="purchase.html" class="nav-link active"><i class="nav-icon bi bi-circle"></i><p>Mua hàng</p></a></li>
+                                <li class="nav-item"><a href="sales.html" class="nav-link"><i class="nav-icon bi bi-circle"></i><p>Bán hàng</p></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon bi bi-graph-up"></i>
+                                <p>
+                                    Thống kê
+                                    <i class="nav-arrow bi bi-chevron-right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="order-history.html" class="nav-link">
+                                        <i class="nav-icon bi bi-clock-history"></i>
+                                        <p>Lịch sử mua hàng</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon bi bi-box-seam-fill"></i>
+                                <p>Hệ thống <i class="nav-arrow bi bi-chevron-right"></i></p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item"><a href="permission.html" class="nav-link"><i class="nav-icon bi bi-circle"></i><p>Phân quyền</p></a></li>
+                                <li class="nav-item"><a href="member.html" class="nav-link"><i class="nav-icon bi bi-circle"></i><p>Danh sách thành viên</p></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="app-main">
+            <div class="app-content-header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6"><h3 class="mb-0">Quản lý Mua hàng</h3></div>
+                        <div class="col-sm-6"><ol class="breadcrumb float-sm-end"><li class="breadcrumb-item"><a href="#">Home</a></li><li class="breadcrumb-item active">Mua hàng</li></ol></div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card mb-4">
+                                <div class="card-header"><h3 class="card-title">Danh sách đơn mua hàng</h3></div>
+                                <div class="card-body">
+                                    <button id="addPurchase" type="button" class="btn btn-primary mb-2"><i class="bi bi-plus-circle"></i> Thêm đơn mua</button>
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr><th style="width:10px">#</th><th>Tên sản phẩm</th><th>Số lượng</th><th>Đơn giá</th><th>Thành tiền</th><th>Ngày nhập</th><th>Nhà cung cấp</th><th>Thao tác</th></tr>
+                                        </thead>
+                                        <tbody id="purchaseList"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="app-footer">
+            <div class="float-end d-none d-sm-inline">Anything you want</div>
+            <strong>Copyright &copy; 2014-2026 <a href="https://adminlte.io" class="text-decoration-none">AdminLTE.io</a>.</strong> All rights reserved.
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="purchaseModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title">Thông tin đơn mua</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body">
+                    <input type="hidden" id="purchaseId">
+                    <div class="row mb-3"><label class="col-sm-3 col-form-label">Tên sản phẩm</label><div class="col-sm-9"><input type="text" class="form-control" id="productName" /></div></div>
+                    <div class="row mb-3"><label class="col-sm-3 col-form-label">Số lượng</label><div class="col-sm-9"><input type="number" class="form-control" id="quantity" /></div></div>
+                    <div class="row mb-3"><label class="col-sm-3 col-form-label">Đơn giá</label><div class="col-sm-9"><input type="number" class="form-control" id="unitPrice" /></div></div>
+                    <div class="row mb-3"><label class="col-sm-3 col-form-label">Ngày nhập</label><div class="col-sm-9"><input type="date" class="form-control" id="purchaseDate" /></div></div>
+                    <div class="row mb-3"><label class="col-sm-3 col-form-label">Nhà cung cấp</label><div class="col-sm-9"><input type="text" class="form-control" id="supplier" /></div></div>
+                </div>
+                <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button><button type="button" id="savePurchase" class="btn btn-primary">Lưu</button></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/adminlte.js"></script>
+
+    <script>
+        $(function() {
+        var isNew = true;
+        var purchaseList = [];
+        var retrieved = localStorage.getItem('purchases');
+        if (retrieved) purchaseList = JSON.parse(retrieved);
+
+        showPurchase();
+
+        function showPurchase() {
+        $("#purchaseList").html("");
+        if (purchaseList.length === 0) {
+        $("#purchaseList").html('<tr><td colspan="8" class="text-center">Chưa có đơn mua nào</td</tr>');
+        return;
+        }
+        for (var i = 0; i < purchaseList.length; i++) {
+        var p = purchaseList[i];
+        var total = p.quantity * p.unitPrice;
+        $("#purchaseList").append('<tr>' +
+        '<td class="align-middle">' + (i+1) + '</td>' +
+        '<td class="align-middle">' + p.productName + '</td>' +
+        '<td class="align-middle text-end">' + p.quantity + '</td>' +
+        '<td class="align-middle text-end">' + p.unitPrice.toLocaleString('vi-VN') + ' đ</td>' +
+        '<td class="align-middle text-end">' + total.toLocaleString('vi-VN') + ' đ</td>' +
+        '<td class="align-middle">' + p.purchaseDate + '</td>' +
+        '<td class="align-middle">' + (p.supplier || '') + '</td>' +
+        '<td class="align-middle">' +
+        '<button data-id="' + p.id + '" class="editPurchase btn btn-sm btn-warning me-1"><i class="bi bi-pencil-square"></i></button>' +
+        '<button data-id="' + p.id + '" class="deletePurchase btn btn-sm btn-danger"><i class="bi bi-trash"></i></button>' +
+        '</td>' +
+        '</tr>');
+        }
+        }
+
+        $("#addPurchase").click(function() {
+        isNew = true;
+        $("#purchaseId,#productName,#quantity,#unitPrice,#purchaseDate,#supplier").val("");
+        $("#purchaseModal").modal('show');
+        });
+
+        $("#savePurchase").click(function() {
+        var id = $("#purchaseId").val();
+        var productName = $("#productName").val();
+        var quantity = parseInt($("#quantity").val());
+        var unitPrice = parseInt($("#unitPrice").val());
+        var purchaseDate = $("#purchaseDate").val();
+        var supplier = $("#supplier").val();
+
+        if (!productName || !quantity || !unitPrice || !purchaseDate) {
+        alert("Vui lòng nhập đầy đủ thông tin!");
+        return;
+        }
+
+        if (isNew) {
+        var newId = purchaseList.length > 0 ? Math.max(...purchaseList.map(p => p.id)) + 1 : 1;
+        purchaseList.push({ id: newId, productName: productName, quantity: quantity, unitPrice: unitPrice, purchaseDate: purchaseDate, supplier: supplier });
+        } else {
+        for (var i = 0; i < purchaseList.length; i++) {
+        if (purchaseList[i].id == id) {
+        purchaseList[i].productName = productName;
+        purchaseList[i].quantity = quantity;
+        purchaseList[i].unitPrice = unitPrice;
+        purchaseList[i].purchaseDate = purchaseDate;
+        purchaseList[i].supplier = supplier;
+        break;
+        }
+        }
+        }
+
+        $("#purchaseModal").modal('hide');
+        showPurchase();
+        localStorage.setItem("purchases", JSON.stringify(purchaseList));
+
+        $("#purchaseId,#productName,#quantity,#unitPrice,#purchaseDate,#supplier").val("");
+        });
+
+        $(document).on("click", ".editPurchase", function() {
+        isNew = false;
+        var id = $(this).data("id");
+        for (var i = 0; i < purchaseList.length; i++) {
+        if (purchaseList[i].id == id) {
+        $("#purchaseId").val(purchaseList[i].id);
+        $("#productName").val(purchaseList[i].productName);
+        $("#quantity").val(purchaseList[i].quantity);
+        $("#unitPrice").val(purchaseList[i].unitPrice);
+        $("#purchaseDate").val(purchaseList[i].purchaseDate);
+        $("#supplier").val(purchaseList[i].supplier);
+        break;
+        }
+        }
+        $("#purchaseModal").modal('show');
+        });
+
+        $(document).on("click", ".deletePurchase", function() {
+        if (confirm("Xác nhận xóa đơn mua...")) {
+        var id = $(this).data("id");
+        for (var i = 0; i < purchaseList.length; i++) {
+        if (purchaseList[i].id == id) {
+        purchaseList.splice(i, 1);
+        localStorage.setItem("purchases", JSON.stringify(purchaseList));
+        showPurchase();
+        return;
+        }
+        }
+        }
+        });
+        });
+    </script>
+</body>
+</html>

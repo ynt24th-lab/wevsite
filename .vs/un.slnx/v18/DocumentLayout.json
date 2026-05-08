@@ -5,6 +5,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Nh\u01B0\\Th\u1EA7y Linh\\un\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Nh\u01B0\\Th\u1EA7y Linh\\un\\cart.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cart.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Nh\u01B0\\Th\u1EA7y Linh\\un\\admin\\purchase.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:admin\\purchase.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Nh\u01B0\\Th\u1EA7y Linh\\un\\admin\\order-history.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:admin\\order-history.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Nh\u01B0\\Th\u1EA7y Linh\\un\\admin\\products.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:admin\\products.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Nh\u01B0\\Th\u1EA7y Linh\\un\\admin\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:admin\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,6 +53,10 @@
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "index.html",
@@ -40,9 +64,74 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Nh\u01B0\\Th\u1EA7y Linh\\un\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAADUDAAAAAAAAAAAowDwDAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAIoCAAAAAAAAAAAkwI4CAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-04-03T04:00:10.33Z",
+              "WhenOpened": "2026-05-08T02:57:35.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "cart.html",
+              "DocumentMoniker": "C:\\Nh\u01B0\\Th\u1EA7y Linh\\un\\cart.html",
+              "RelativeDocumentMoniker": "cart.html",
+              "ToolTip": "C:\\Nh\u01B0\\Th\u1EA7y Linh\\un\\cart.html",
+              "RelativeToolTip": "cart.html",
+              "ViewState": "AgIAAHABAAAAAAAAAAAkwJgBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-08T02:45:26.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "purchase.html",
+              "DocumentMoniker": "C:\\Nh\u01B0\\Th\u1EA7y Linh\\un\\admin\\purchase.html",
+              "RelativeDocumentMoniker": "admin\\purchase.html",
+              "ToolTip": "C:\\Nh\u01B0\\Th\u1EA7y Linh\\un\\admin\\purchase.html",
+              "RelativeToolTip": "admin\\purchase.html",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEEAAACbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-08T02:39:58.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Nh\u01B0\\Th\u1EA7y Linh\\un\\admin\\index.html",
+              "RelativeDocumentMoniker": "admin\\index.html",
+              "ToolTip": "C:\\Nh\u01B0\\Th\u1EA7y Linh\\un\\admin\\index.html",
+              "RelativeToolTip": "admin\\index.html",
+              "ViewState": "AgIAAFMBAAAAAAAAAAAAAF0BAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-08T02:33:46.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "products.html",
+              "DocumentMoniker": "C:\\Nh\u01B0\\Th\u1EA7y Linh\\un\\admin\\products.html",
+              "RelativeDocumentMoniker": "admin\\products.html",
+              "ToolTip": "C:\\Nh\u01B0\\Th\u1EA7y Linh\\un\\admin\\products.html",
+              "RelativeToolTip": "admin\\products.html",
+              "ViewState": "AgIAACYBAAAAAAAAAAAAACwBAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-08T02:25:53.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "order-history.html",
+              "DocumentMoniker": "C:\\Nh\u01B0\\Th\u1EA7y Linh\\un\\admin\\order-history.html",
+              "RelativeDocumentMoniker": "admin\\order-history.html",
+              "ToolTip": "C:\\Nh\u01B0\\Th\u1EA7y Linh\\un\\admin\\order-history.html",
+              "RelativeToolTip": "admin\\order-history.html",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAIMAAACaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-08T02:23:51.962Z",
               "EditorCaption": ""
             }
           ]
